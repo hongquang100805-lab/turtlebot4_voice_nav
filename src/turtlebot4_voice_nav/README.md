@@ -1,5 +1,7 @@
 # TurtleBot 4 — Phân vùng bản đồ và điều hướng bằng giọng nói
 
+**Yêu cầu môi trường:** Ubuntu **24.04 LTS**, ROS 2 **Jazzy**, Gazebo **Harmonic** và Python **3.12**. Cần microphone laptop hoặc microphone USB để nhận lệnh giọng nói.
+
 Sử dụng lại bản đồ `depot_02.yaml` của bài trước, hiển thị ba vùng **A/B/C** trên RViz, nhận câu nói tiếng Việt bằng **Whisper** và gửi goal tuần tự cho **Nav2**.
 
 Luồng xử lý: **microphone → Whisper → `/voice/transcript` → phân tích vùng → `/navigate_to_pose` → robot**. RViz hiển thị bản đồ, robot, vùng và đường Nav2.
@@ -414,15 +416,3 @@ turtlebot4_voice_nav/
 ├── setup.py                         # Executable và tài nguyên cài đặt
 └── README.md                        # Hướng dẫn chạy
 ```
-
-## 11. Video, ảnh và số liệu cho báo cáo
-
-- [Video MP4 có âm thanh — 8 phút 39 giây](../../recordings/voice_nav_2026-11-01/turtlebot4_voice_navigation_demo.mp4).
-- [Ảnh chọn lọc cho báo cáo](../../recordings/voice_nav_2026-11-01/report_images/), kèm chú thích.
-- [Nhật ký và bảng kết quả phiên quay](../../recordings/voice_nav_2026-11-01/EVIDENCE.md).
-
-Thư mục ảnh có `CAPTIONS.md` để lấy chú thích; bảng số liệu nằm trong `experiment_results.csv` cạnh `EVIDENCE.md`. Khi dùng mã báo cáo đã nhận trên Overleaf, chọn compiler **pdfLaTeX** và sửa thông tin bìa trong `thong_tin.tex`.
-
-Các liên kết trên trỏ tới hiện vật trong workspace hiện tại; nếu sao chép riêng package thì cần sao chép kèm các thư mục tương ứng.
-
-Phiên 01/11/2026 hoàn thành các đích A, B, C và tuyến A → B khi robot đang ở C; vùng lạ bị từ chối và không có goal mới. Đây là kết quả một phiên thử, không phải độ chính xác nhận dạng tổng quát. Hướng dẫn kiểm chứng kỹ thuật trước đó: [VALIDATION.md](VALIDATION.md).
