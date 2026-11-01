@@ -1,0 +1,2475 @@
+{
+  "source": "text injection diagnostic, not microphone recognition",
+  "commands": [
+    {
+      "input": "Đi đến khu vực Z.",
+      "expected": "REJECTED",
+      "result": {
+        "state": "IDLE",
+        "event": "REJECTED",
+        "message": "Khu vực không tồn tại hoặc chưa được gắn nhãn: khu vuc z",
+        "ready": true,
+        "route": [],
+        "waypoint_index": 0,
+        "active_region": null,
+        "wall_time": 1793149094.482958,
+        "text": "Đi đến khu vực Z."
+      },
+      "elapsed_wall": 0.0
+    },
+    {
+      "input": "Đi đến khu vực A.",
+      "expected": "ROUTE_COMPLETED",
+      "result": {
+        "state": "COMPLETED",
+        "event": "ROUTE_COMPLETED",
+        "message": "Đã hoàn thành toàn bộ hành trình.",
+        "ready": true,
+        "route": [
+          "A"
+        ],
+        "waypoint_index": 1,
+        "active_region": null,
+        "wall_time": 1793149177.9584692
+      },
+      "elapsed_wall": 82.47
+    },
+    {
+      "input": "Di chuyển từ khu vực A đến khu vực B.",
+      "expected": "ROUTE_COMPLETED",
+      "result": {
+        "state": "COMPLETED",
+        "event": "ROUTE_COMPLETED",
+        "message": "Đã hoàn thành toàn bộ hành trình.",
+        "ready": true,
+        "route": [
+          "A",
+          "B"
+        ],
+        "waypoint_index": 2,
+        "active_region": null,
+        "wall_time": 1793149361.1133058
+      },
+      "elapsed_wall": 182.15
+    },
+    {
+      "input": "Đi đến khu vực C.",
+      "expected": "ROUTE_COMPLETED",
+      "result": {
+        "state": "COMPLETED",
+        "event": "ROUTE_COMPLETED",
+        "message": "Đã hoàn thành toàn bộ hành trình.",
+        "ready": true,
+        "route": [
+          "C"
+        ],
+        "waypoint_index": 1,
+        "active_region": null,
+        "wall_time": 1793149410.3915029
+      },
+      "elapsed_wall": 48.24
+    }
+  ],
+  "events": [
+    {
+      "state": "IDLE",
+      "event": "READY_CHANGED",
+      "message": "Sẵn sàng nhận lệnh.",
+      "ready": true,
+      "route": [],
+      "waypoint_index": 0,
+      "active_region": null,
+      "wall_time": 1793149055.8125007
+    },
+    {
+      "state": "IDLE",
+      "event": "REJECTED",
+      "message": "Khu vực không tồn tại hoặc chưa được gắn nhãn: khu vuc z",
+      "ready": true,
+      "route": [],
+      "waypoint_index": 0,
+      "active_region": null,
+      "wall_time": 1793149094.482958,
+      "text": "Đi đến khu vực Z."
+    },
+    {
+      "state": "IDLE",
+      "event": "ROUTE_ACCEPTED",
+      "message": "Đã kiểm tra toàn bộ các khu vực.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": null,
+      "wall_time": 1793149095.4908383,
+      "text": "Đi đến khu vực A."
+    },
+    {
+      "state": "SENDING",
+      "event": "GOAL_SENT",
+      "message": "Gửi đích đến Nav2.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149095.5549726,
+      "goal": {
+        "x": -10.542,
+        "y": -0.084,
+        "yaw": 0.0
+      }
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "GOAL_ACCEPTED",
+      "message": "Nav2 đang điều hướng.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149095.557892
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149095.5595827,
+      "distance_remaining": 0.0
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149097.5726435,
+      "distance_remaining": 10.135355949401855
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149099.577679,
+      "distance_remaining": 9.860355377197266
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149101.588515,
+      "distance_remaining": 9.610355377197266
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149103.5971625,
+      "distance_remaining": 9.335355758666992
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149105.6075644,
+      "distance_remaining": 9.060355186462402
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149107.6171796,
+      "distance_remaining": 8.835355758666992
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149109.6184416,
+      "distance_remaining": 8.610355377197266
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149111.6273804,
+      "distance_remaining": 8.335355758666992
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149113.6376102,
+      "distance_remaining": 8.010355949401855
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149115.6471207,
+      "distance_remaining": 7.760355472564697
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149117.6574578,
+      "distance_remaining": 7.5103559494018555
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149119.6671777,
+      "distance_remaining": 7.2603559494018555
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149121.6775374,
+      "distance_remaining": 7.0103559494018555
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149123.6874828,
+      "distance_remaining": 6.735355377197266
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149125.6976564,
+      "distance_remaining": 6.485355377197266
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149127.7069483,
+      "distance_remaining": 6.1853556632995605
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149129.7193313,
+      "distance_remaining": 5.9353556632995605
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149131.7280536,
+      "distance_remaining": 5.6853556632995605
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149133.7384698,
+      "distance_remaining": 5.4353556632995605
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149135.7471194,
+      "distance_remaining": 5.1853556632995605
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149137.7573655,
+      "distance_remaining": 4.885355472564697
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149139.7690537,
+      "distance_remaining": 4.585355758666992
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149141.777369,
+      "distance_remaining": 4.385355472564697
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149143.7874968,
+      "distance_remaining": 4.135355472564697
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149145.7899766,
+      "distance_remaining": 3.835355520248413
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149147.797716,
+      "distance_remaining": 3.535355567932129
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149149.8073378,
+      "distance_remaining": 3.2603554725646973
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149151.8174355,
+      "distance_remaining": 3.0103554725646973
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149153.827224,
+      "distance_remaining": 2.7353556156158447
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149155.8377595,
+      "distance_remaining": 2.460355520248413
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149157.847162,
+      "distance_remaining": 2.1853554248809814
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149159.8577135,
+      "distance_remaining": 1.9103554487228394
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149161.867245,
+      "distance_remaining": 1.6353554725646973
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149163.8776326,
+      "distance_remaining": 1.3603554964065552
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149165.8873708,
+      "distance_remaining": 1.085355520248413
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149167.8988273,
+      "distance_remaining": 0.8103554844856262
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149169.9072444,
+      "distance_remaining": 0.5603554844856262
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149171.9171615,
+      "distance_remaining": 0.28535547852516174
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149173.9280467,
+      "distance_remaining": 0.20606589317321777
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149175.9381413,
+      "distance_remaining": 0.15606589615345
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "WAYPOINT_REACHED",
+      "message": "Đã đến khu vực A.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 0,
+      "active_region": null,
+      "wall_time": 1793149177.9574387
+    },
+    {
+      "state": "COMPLETED",
+      "event": "ROUTE_COMPLETED",
+      "message": "Đã hoàn thành toàn bộ hành trình.",
+      "ready": true,
+      "route": [
+        "A"
+      ],
+      "waypoint_index": 1,
+      "active_region": null,
+      "wall_time": 1793149177.9584692
+    },
+    {
+      "state": "COMPLETED",
+      "event": "ROUTE_ACCEPTED",
+      "message": "Đã kiểm tra toàn bộ các khu vực.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 0,
+      "active_region": null,
+      "wall_time": 1793149178.968387,
+      "text": "Di chuyển từ khu vực A đến khu vực B."
+    },
+    {
+      "state": "SENDING",
+      "event": "GOAL_SENT",
+      "message": "Gửi đích đến Nav2.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149178.9705484,
+      "goal": {
+        "x": -10.542,
+        "y": -0.084,
+        "yaw": 0.0
+      }
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "GOAL_ACCEPTED",
+      "message": "Nav2 đang điều hướng.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149178.974776
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 0,
+      "active_region": "A",
+      "wall_time": 1793149178.9765387,
+      "distance_remaining": 0.0
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "WAYPOINT_REACHED",
+      "message": "Đã đến khu vực A.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 0,
+      "active_region": null,
+      "wall_time": 1793149179.0138319
+    },
+    {
+      "state": "SENDING",
+      "event": "GOAL_SENT",
+      "message": "Gửi đích đến Nav2.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149179.018178,
+      "goal": {
+        "x": 12.858,
+        "y": 0.266,
+        "yaw": 0.0
+      }
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "GOAL_ACCEPTED",
+      "message": "Nav2 đang điều hướng.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149179.0212178
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149180.9806833,
+      "distance_remaining": 23.426776885986328
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149182.990946,
+      "distance_remaining": 23.176776885986328
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149185.0014038,
+      "distance_remaining": 22.856067657470703
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149187.0122023,
+      "distance_remaining": 22.631067276000977
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149189.0223293,
+      "distance_remaining": 22.401777267456055
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149191.0306995,
+      "distance_remaining": 22.181066513061523
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149193.0415187,
+      "distance_remaining": 21.926776885986328
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149195.0511878,
+      "distance_remaining": 21.581066131591797
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149197.0619643,
+      "distance_remaining": 21.331066131591797
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149199.0707922,
+      "distance_remaining": 21.0767765045166
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149201.081951,
+      "distance_remaining": 20.776775360107422
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149203.0905645,
+      "distance_remaining": 20.526775360107422
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149205.1010263,
+      "distance_remaining": 20.226778030395508
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149207.1109612,
+      "distance_remaining": 19.976778030395508
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149209.1206644,
+      "distance_remaining": 19.726776123046875
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149211.1310854,
+      "distance_remaining": 19.470306396484375
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149213.1405444,
+      "distance_remaining": 19.2017765045166
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149215.1505184,
+      "distance_remaining": 18.930177688598633
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149217.1620777,
+      "distance_remaining": 18.65965461730957
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149219.170892,
+      "distance_remaining": 18.381065368652344
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149221.1811886,
+      "distance_remaining": 18.12677764892578
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149223.1844487,
+      "distance_remaining": 17.901777267456055
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149225.19204,
+      "distance_remaining": 17.75177574157715
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149227.2010808,
+      "distance_remaining": 17.476776123046875
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149229.2117367,
+      "distance_remaining": 17.10606575012207
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149231.2211418,
+      "distance_remaining": 16.78106689453125
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149233.2322547,
+      "distance_remaining": 16.506065368652344
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149235.2415748,
+      "distance_remaining": 16.23106575012207
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149237.250926,
+      "distance_remaining": 15.931065559387207
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149239.261442,
+      "distance_remaining": 15.681066513061523
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149241.2711253,
+      "distance_remaining": 15.406065940856934
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149243.2824779,
+      "distance_remaining": 15.106064796447754
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149245.2913096,
+      "distance_remaining": 14.831067085266113
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149247.3010828,
+      "distance_remaining": 14.581066131591797
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149249.3128328,
+      "distance_remaining": 14.316805839538574
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149251.3211308,
+      "distance_remaining": 14.074918746948242
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149253.3317044,
+      "distance_remaining": 13.813651084899902
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149255.341377,
+      "distance_remaining": 13.531065940856934
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149257.3536053,
+      "distance_remaining": 13.256065368652344
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149259.3611274,
+      "distance_remaining": 13.056065559387207
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149261.3715303,
+      "distance_remaining": 12.806066513061523
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149263.3813403,
+      "distance_remaining": 12.601776123046875
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149265.391322,
+      "distance_remaining": 12.326776504516602
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149267.4009228,
+      "distance_remaining": 11.95606517791748
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149269.4121401,
+      "distance_remaining": 11.706066131591797
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149271.421309,
+      "distance_remaining": 11.476776123046875
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149273.4312384,
+      "distance_remaining": 11.481064796447754
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149275.4416146,
+      "distance_remaining": 11.35606575012207
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149277.4511657,
+      "distance_remaining": 11.051775932312012
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149279.4618247,
+      "distance_remaining": 10.776777267456055
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149281.4716282,
+      "distance_remaining": 10.526777267456055
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149283.4814746,
+      "distance_remaining": 10.301775932312012
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149285.4914587,
+      "distance_remaining": 10.026777267456055
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149287.5014896,
+      "distance_remaining": 9.826776504516602
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149289.5114374,
+      "distance_remaining": 9.556065559387207
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149291.521322,
+      "distance_remaining": 9.326776504516602
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149293.5317066,
+      "distance_remaining": 9.051776885986328
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149295.54146,
+      "distance_remaining": 8.826775550842285
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149297.5515506,
+      "distance_remaining": 8.603337287902832
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149299.5618217,
+      "distance_remaining": 8.357922554016113
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149301.5712397,
+      "distance_remaining": 8.114304542541504
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149303.5823026,
+      "distance_remaining": 7.901777267456055
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149305.5915952,
+      "distance_remaining": 7.656064987182617
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149307.600823,
+      "distance_remaining": 7.381065845489502
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149309.6113179,
+      "distance_remaining": 7.031066417694092
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149311.6210845,
+      "distance_remaining": 6.756065845489502
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149313.6314821,
+      "distance_remaining": 6.481066703796387
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149315.6413448,
+      "distance_remaining": 6.206065654754639
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149317.6509042,
+      "distance_remaining": 5.931066513061523
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149319.6629183,
+      "distance_remaining": 5.681066036224365
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149321.6709654,
+      "distance_remaining": 5.406065940856934
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149323.6810002,
+      "distance_remaining": 5.106065273284912
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149325.6913958,
+      "distance_remaining": 4.8560662269592285
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149327.7011356,
+      "distance_remaining": 4.60606575012207
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149329.7110608,
+      "distance_remaining": 4.306065082550049
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149331.7211576,
+      "distance_remaining": 4.056066513061523
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149333.7313285,
+      "distance_remaining": 3.7810661792755127
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149335.7415965,
+      "distance_remaining": 3.5560662746429443
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149337.7512305,
+      "distance_remaining": 3.3060648441314697
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149339.7613463,
+      "distance_remaining": 3.0517756938934326
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149341.7714853,
+      "distance_remaining": 2.756065607070923
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149343.7813473,
+      "distance_remaining": 2.50606632232666
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149345.7918527,
+      "distance_remaining": 2.2517762184143066
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149347.8020926,
+      "distance_remaining": 2.0102694034576416
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149349.8115764,
+      "distance_remaining": 1.7060672044754028
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149351.8212705,
+      "distance_remaining": 1.494040608406067
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149353.8325906,
+      "distance_remaining": 1.280638337135315
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149355.8418798,
+      "distance_remaining": 1.0119314193725586
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149357.8510642,
+      "distance_remaining": 0.7060646414756775
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": "B",
+      "wall_time": 1793149359.861327,
+      "distance_remaining": 0.43106502294540405
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "WAYPOINT_REACHED",
+      "message": "Đã đến khu vực B.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 1,
+      "active_region": null,
+      "wall_time": 1793149361.1119728
+    },
+    {
+      "state": "COMPLETED",
+      "event": "ROUTE_COMPLETED",
+      "message": "Đã hoàn thành toàn bộ hành trình.",
+      "ready": true,
+      "route": [
+        "A",
+        "B"
+      ],
+      "waypoint_index": 2,
+      "active_region": null,
+      "wall_time": 1793149361.1133058
+    },
+    {
+      "state": "COMPLETED",
+      "event": "ROUTE_ACCEPTED",
+      "message": "Đã kiểm tra toàn bộ các khu vực.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": null,
+      "wall_time": 1793149362.1498702,
+      "text": "Đi đến khu vực C."
+    },
+    {
+      "state": "SENDING",
+      "event": "GOAL_SENT",
+      "message": "Gửi đích đến Nav2.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149362.1512423,
+      "goal": {
+        "x": 12.258,
+        "y": 5.416,
+        "yaw": 0.0
+      }
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "GOAL_ACCEPTED",
+      "message": "Nav2 đang điều hướng.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149362.153514
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149362.155125,
+      "distance_remaining": 0.0
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149364.1650102,
+      "distance_remaining": 5.256065368652344
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149366.173472,
+      "distance_remaining": 5.23358678817749
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149368.183206,
+      "distance_remaining": 5.081066608428955
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149370.194424,
+      "distance_remaining": 4.856064319610596
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149372.2037582,
+      "distance_remaining": 4.73106575012207
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149374.2129915,
+      "distance_remaining": 4.531065940856934
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149376.223278,
+      "distance_remaining": 4.306066036224365
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149378.2309709,
+      "distance_remaining": 4.106063365936279
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149380.239701,
+      "distance_remaining": 3.8810641765594482
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149382.2498443,
+      "distance_remaining": 3.5310628414154053
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149384.2602406,
+      "distance_remaining": 3.3060662746429443
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149386.2712274,
+      "distance_remaining": 3.0060672760009766
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149388.2802978,
+      "distance_remaining": 2.756066083908081
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149390.290204,
+      "distance_remaining": 2.4810667037963867
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149392.3005455,
+      "distance_remaining": 2.2560627460479736
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149394.3020065,
+      "distance_remaining": 1.9310654401779175
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149396.31032,
+      "distance_remaining": 1.6560654640197754
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149398.311892,
+      "distance_remaining": 1.431065559387207
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149400.3203259,
+      "distance_remaining": 1.1310657262802124
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149402.3298888,
+      "distance_remaining": 0.9060658812522888
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149404.3398438,
+      "distance_remaining": 0.6560660600662231
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149406.3507712,
+      "distance_remaining": 0.3810650706291199
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149408.3613582,
+      "distance_remaining": 0.2060655951499939
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "FEEDBACK",
+      "message": "Đang di chuyển.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": "C",
+      "wall_time": 1793149410.370197,
+      "distance_remaining": 0.15606559813022614
+    },
+    {
+      "state": "NAVIGATING",
+      "event": "WAYPOINT_REACHED",
+      "message": "Đã đến khu vực C.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 0,
+      "active_region": null,
+      "wall_time": 1793149410.3904877
+    },
+    {
+      "state": "COMPLETED",
+      "event": "ROUTE_COMPLETED",
+      "message": "Đã hoàn thành toàn bộ hành trình.",
+      "ready": true,
+      "route": [
+        "C"
+      ],
+      "waypoint_index": 1,
+      "active_region": null,
+      "wall_time": 1793149410.3915029
+    }
+  ]
+}

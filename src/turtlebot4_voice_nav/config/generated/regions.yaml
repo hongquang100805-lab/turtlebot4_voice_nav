@@ -1,0 +1,87 @@
+version: 1
+frame_id: map
+map_yaml: /home/lenovo/tb4_ws/src/turtlebot4_slam_nav/maps/depot_02.yaml
+map_fingerprint:
+  yaml_sha256: a18b49e233f1ff420fbff82084b11c788679ab5e8e556f7f9724235d278d65a2
+  image_sha256: f93c89b1bddc0c4fdd73e79dce88b601028df96dbb1635a8b1df601039691a45
+method: seeded_geodesic
+description: Functional regions of the largest clearance-safe component; not automatic
+  room classification.
+clearance_m: 0.3
+connectivity: 4
+mask_file: regions_mask.npz
+regions:
+- id: A
+  numeric_label: 1
+  name: Khu vực A
+  aliases:
+  - A
+  - khu a
+  - khu vực a
+  - khu vực một
+  - khu một
+  - khu vực 1
+  - khu 1
+  goal:
+    x: -3.992
+    y: 0.016
+    yaw: 0.0
+  pixel:
+  - 222
+  - 147
+  area_m2: 185.46
+  clearance_m: 3.836
+  auto_goal:
+    x: -10.542
+    y: -0.084
+    yaw: 0.0
+- id: B
+  numeric_label: 2
+  name: Khu vực B
+  aliases:
+  - B
+  - khu b
+  - khu vực b
+  - khu vực hai
+  - khu hai
+  - khu vực 2
+  - khu 2
+  goal:
+    x: 4.808
+    y: -3.484
+    yaw: 0.0
+  pixel:
+  - 398
+  - 217
+  area_m2: 60.7225
+  clearance_m: 0.708
+  auto_goal:
+    x: 12.858
+    y: 0.266
+    yaw: 0.0
+- id: C
+  numeric_label: 3
+  name: Khu vực C
+  aliases:
+  - C
+  - khu c
+  - khu vực c
+  - khu vực ba
+  - khu ba
+  - khu vực 3
+  - khu 3
+  goal:
+    x: 3.208
+    y: 3.166
+    yaw: 0.0
+  pixel:
+  - 366
+  - 84
+  area_m2: 112.6125
+  clearance_m: 0.708
+  auto_goal:
+    x: 12.258
+    y: 5.416
+    yaw: 0.0
+goal_selection: Demonstration targets selected within each geodesic region and verified
+  with real microphone navigation; auto_goal retains original deepest-interior target.

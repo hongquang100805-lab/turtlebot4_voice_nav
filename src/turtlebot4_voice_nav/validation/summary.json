@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-28",
+  "build": "passed",
+  "tests": {
+    "passed": 80,
+    "map": 9,
+    "parser": 51,
+    "navigator": 20
+  },
+  "regions": 3,
+  "asr": {
+    "engine": "faster-whisper 1.2.1",
+    "model": "small multilingual",
+    "device": "cpu",
+    "compute_type": "int8",
+    "human_microphone_tested": true,
+    "latest_live_attempts": 7,
+    "completed_voice_navigation_routes": 4,
+    "unknown_place_rejected_without_new_goal": true,
+    "initial_recognition_retries": 2,
+    "evidence": "live_microphone_2026-10-28/results.json"
+  },
+  "gazebo_nav2": {
+    "domain": 78,
+    "world": "depot",
+    "input_type": "diagnostic text, not speech",
+    "commands": [
+      {
+        "text": "Đi đến khu vực Z.",
+        "event": "REJECTED",
+        "route": [],
+        "elapsed_wall": 0.0
+      },
+      {
+        "text": "Đi đến khu vực A.",
+        "event": "ROUTE_COMPLETED",
+        "route": [
+          "A"
+        ],
+        "elapsed_wall": 82.47
+      },
+      {
+        "text": "Di chuyển từ khu vực A đến khu vực B.",
+        "event": "ROUTE_COMPLETED",
+        "route": [
+          "A",
+          "B"
+        ],
+        "elapsed_wall": 182.15
+      },
+      {
+        "text": "Đi đến khu vực C.",
+        "event": "ROUTE_COMPLETED",
+        "route": [
+          "C"
+        ],
+        "elapsed_wall": 48.24
+      }
+    ]
+  },
+  "gazebo_gui": {
+    "default_render_engine": "ogre2",
+    "materials_visually_verified": true,
+    "evidence": "gazebo_ogre2_fixed.png"
+  },
+  "latest_live_test": {
+    "all_required_scenarios_passed": true,
+    "actual_voice_commands": [
+      {
+        "stage": 1,
+        "recognized": "Đi đến khu vực 1.",
+        "result": "COMPLETED"
+      },
+      {
+        "stage": 2,
+        "recognized": "Đi đến khu vực hai.",
+        "result": "COMPLETED"
+      },
+      {
+        "stage": 3,
+        "recognized": "Đi đến khu vực ba.",
+        "result": "COMPLETED"
+      },
+      {
+        "stage": 4,
+        "recognized": "Di chuyển từ khu vực một đến khu vực hai.",
+        "result": "COMPLETED"
+      }
+    ],
+    "unknown_place": {
+      "spoken_text": "Đi đến nhà ăn.",
+      "recognized_text": "Đi đến nhà ăn.",
+      "new_goal_requests": 0,
+      "rejected": true
+    },
+    "short_demo_targets_promoted_to_default_catalog": true
+  }
+}

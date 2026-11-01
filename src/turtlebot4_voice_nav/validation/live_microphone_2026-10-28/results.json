@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-28",
+  "source": "Real user microphone through local Whisper; no text or velocity injection by coach",
+  "trial_catalog": "regions.yaml",
+  "trial_goal_positions_are_shorter_than_default_catalog": true,
+  "attempts": [
+    {
+      "attempt": 1,
+      "stage": 1,
+      "requested": "Đi đến khu vực A.",
+      "expected_route": [
+        "A"
+      ],
+      "events": [
+        {
+          "event": "REJECTED",
+          "route": [],
+          "waypoint_index": 0,
+          "message": "Khu vực không tồn tại hoặc chưa được gắn nhãn: khu vuc am",
+          "time": 1793168476.4450805
+        }
+      ],
+      "recognized": "Đi, đến, khu vực, ám.",
+      "inference_seconds": 2.13,
+      "avg_logprob": -0.444,
+      "result": "REJECTED",
+      "rejection_reason": "Khu vực không tồn tại hoặc chưa được gắn nhãn: khu vuc am"
+    },
+    {
+      "attempt": 2,
+      "stage": 1,
+      "requested": "Đi đến khu vực một.",
+      "expected_route": [
+        "A"
+      ],
+      "events": [
+        {
+          "event": "ROUTE_ACCEPTED",
+          "route": [
+            "A"
+          ],
+          "waypoint_index": 0,
+          "message": "Đã kiểm tra toàn bộ các khu vực.",
+          "time": 1793168599.6450722
+        },
+        {
+          "event": "WAYPOINT_REACHED",
+          "route": [
+            "A"
+          ],
+          "waypoint_index": 0,
+          "message": "Đã đến khu vực A.",
+          "time": 1793168638.8451748
+        },
+        {
+          "event": "ROUTE_COMPLETED",
+          "route": [
+            "A"
+          ],
+          "waypoint_index": 1,
+          "message": "Đã hoàn thành toàn bộ hành trình.",
+          "time": 1793168638.8455439
+        }
+      ],
+      "recognized": "Đi đến khu vực 1.",
+      "inference_seconds": 1.893,
+      "avg_logprob": -0.268,
+      "result": "COMPLETED"
+    },
+    {
+      "attempt": 3,
+      "stage": 2,
+      "requested": "Đi đến khu vực hai.",
+      "expected_route": [
+        "B"
+      ],
+      "events": [
+        {
+          "event": "REJECTED",
+          "route": [
+            "A"
+          ],
+          "waypoint_index": 1,
+          "message": "Khu vực không tồn tại hoặc chưa được gắn nhãn: khu vuc hanh di",
+          "time": 1793168674.3451562
+        }
+      ],
+      "recognized": "Đi, đến, khu vực, hành. Đi, đến, khu vực, hành.",
+      "inference_seconds": 2.353,
+      "avg_logprob": -0.443,
+      "result": "REJECTED",
+      "rejection_reason": "Khu vực không tồn tại hoặc chưa được gắn nhãn: khu vuc hanh di"
+    },
+    {
+      "attempt": 4,
+      "stage": 2,
+      "requested": "Đi đến khu vực hai.",
+      "expected_route": [
+        "B"
+      ],
+      "events": [
+        {
+          "event": "ROUTE_ACCEPTED",
+          "route": [
+            "B"
+          ],
+          "waypoint_index": 0,
+          "message": "Đã kiểm tra toàn bộ các khu vực.",
+          "time": 1793168786.3451352
+        },
+        {
+          "event": "WAYPOINT_REACHED",
+          "route": [
+            "B"
+          ],
+          "waypoint_index": 0,
+          "message": "Đã đến khu vực B.",
+          "time": 1793168967.944375
+        },
+        {
+          "event": "ROUTE_COMPLETED",
+          "route": [
+            "B"
+          ],
+          "waypoint_index": 1,
+          "message": "Đã hoàn thành toàn bộ hành trình.",
+          "time": 1793168967.9448695
+        }
+      ],
+      "recognized": "Đi đến khu vực hai.",
+      "inference_seconds": 1.935,
+      "avg_logprob": -0.148,
+      "result": "COMPLETED"
+    },
+    {
+      "attempt": 5,
+      "stage": 3,
+      "requested": "Đi đến khu vực ba.",
+      "expected_route": [
+        "C"
+      ],
+      "events": [
+        {
+          "event": "ROUTE_ACCEPTED",
+          "route": [
+            "C"
+          ],
+          "waypoint_index": 0,
+          "message": "Đã kiểm tra toàn bộ các khu vực.",
+          "time": 1793168996.0446937
+        },
+        {
+          "event": "WAYPOINT_REACHED",
+          "route": [
+            "C"
+          ],
+          "waypoint_index": 0,
+          "message": "Đã đến khu vực C.",
+          "time": 1793169175.04512
+        },
+        {
+          "event": "ROUTE_COMPLETED",
+          "route": [
+            "C"
+          ],
+          "waypoint_index": 1,
+          "message": "Đã hoàn thành toàn bộ hành trình.",
+          "time": 1793169175.045488
+        }
+      ],
+      "recognized": "Đi đến khu vực ba.",
+      "inference_seconds": 1.78,
+      "avg_logprob": -0.112,
+      "result": "COMPLETED"
+    },
+    {
+      "attempt": 6,
+      "stage": 4,
+      "requested": "Di chuyển từ khu vực một đến khu vực hai.",
+      "expected_route": [
+        "A",
+        "B"
+      ],
+      "events": [
+        {
+          "event": "ROUTE_ACCEPTED",
+          "route": [
+            "A",
+            "B"
+          ],
+          "waypoint_index": 0,
+          "message": "Đã kiểm tra toàn bộ các khu vực.",
+          "time": 1793169208.747398
+        },
+        {
+          "event": "WAYPOINT_REACHED",
+          "route": [
+            "A",
+            "B"
+          ],
+          "waypoint_index": 0,
+          "message": "Đã đến khu vực A.",
+          "time": 1793169299.745018
+        },
+        {
+          "event": "WAYPOINT_REACHED",
+          "route": [
+            "A",
+            "B"
+          ],
+          "waypoint_index": 1,
+          "message": "Đã đến khu vực B.",
+          "time": 1793169457.045235
+        },
+        {
+          "event": "ROUTE_COMPLETED",
+          "route": [
+            "A",
+            "B"
+          ],
+          "waypoint_index": 2,
+          "message": "Đã hoàn thành toàn bộ hành trình.",
+          "time": 1793169457.0454936
+        }
+      ],
+      "recognized": "Di chuyển từ khu vực một đến khu vực hai.",
+      "inference_seconds": 2.162,
+      "avg_logprob": -0.165,
+      "result": "COMPLETED"
+    },
+    {
+      "attempt": 7,
+      "stage": 5,
+      "requested": "Đi đến nhà ăn.",
+      "expected_route": [],
+      "events": [
+        {
+          "event": "REJECTED",
+          "route": [
+            "A",
+            "B"
+          ],
+          "waypoint_index": 2,
+          "message": "Khu vực không tồn tại hoặc chưa được gắn nhãn: nha an",
+          "time": 1793169506.344844
+        }
+      ],
+      "recognized": "Đi đến nhà ăn.",
+      "inference_seconds": 1.718,
+      "avg_logprob": -0.207,
+      "result": "REJECTED",
+      "rejection_reason": "Khu vực không tồn tại hoặc chưa được gắn nhãn: nha an"
+    }
+  ],
+  "completed_navigation_stages": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "unknown_place_test": {
+    "spoken_text": "Đi đến nhà ăn.",
+    "recognized_text": "Đi đến nhà ăn.",
+    "new_goal_requests": 0,
+    "rejected": true
+  },
+  "all_required_live_scenarios_passed": true
+}

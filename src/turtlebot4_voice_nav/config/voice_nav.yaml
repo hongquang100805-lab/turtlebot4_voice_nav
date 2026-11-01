@@ -1,0 +1,6 @@
+voice_navigator:
+  ros__parameters:
+    use_sim_time: true
+    goal_timeout: 600.0
+    response_timeout: 15.0
+    transform_max_age: 2.0
